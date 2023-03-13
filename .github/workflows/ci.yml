@@ -13,3 +13,8 @@ jobs:
     needs:
       - unittest
     uses: na4ma4/actions/.github/workflows/makefiles-release.yml@dev
+    with:
+      platforms: 'linux/amd64,windows/amd64'
+      language: bare
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
