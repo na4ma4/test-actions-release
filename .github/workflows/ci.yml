@@ -16,5 +16,5 @@ jobs:
     with:
       platforms: 'linux/amd64,windows/amd64'
       language: bare
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+    # secrets:
+    #   token: ${{ secrets.GITHUB_TOKEN }}
