@@ -1,6 +1,8 @@
+ifeq ($(GO_MATRIX),)
 GO_MATRIX += darwin/amd64 darwin/arm64
 GO_MATRIX += linux/amd64 linux/arm64
 GO_MATRIX += windows/amd64
+endif
 
 APP_DATE ?= $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
 GIT_HASH ?= $(shell git show -s --format=%h)
